@@ -1,29 +1,23 @@
 {
-  "$id": "Event1",
+  "$id": "Event-1",
   "$schema": "https://schema.yext.com/config/km/entity/v1",
   "content": {
     "c_activeInAnswers": true,
-    "yext/address": {
-      "city": "New York",
-      "countryCode": "US",
-      "line1": "1 Madison Ave",
-      "postalCode": "10010",
-      "region": "NY"
-    },
     "yext/description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mattis molestie a iaculis at erat pellentesque adipiscing commodo. Diam phasellus vestibulum lorem sed risus ultricies tristique nulla aliquet. Purus faucibus ornare suspendisse sed nisi lacus. Cursus turpis massa tincidunt dui ut ornare lectus sit amet.",
-    "yext/landingPageUrl": "https://www.yext.com",
-    "yext/name": "Event",
+    "yext/isFreeEvent": true,
+    "yext/isTicketedEvent": true,
+    "yext/name": "Event Webinar",
+    "yext/ticketAvailability": "IN_STOCK",
     "yext/ticketUrl": "https://www.yext.com",
     "yext/time": {
-      "end": "2027-03-11T17:00",
-      "start": "2020-03-16T09:00"
+      "end": "2023-07-06T18:00",
+      "start": "2023-07-06T17:00"
     },
     "yext/timezone": "America/New_York",
-    "yext/venueName": "Yext",
     "yext/websiteUrl": {
-      "displayUrl": "https://www.yext.com",
+      "displayUrl": "http://www.yext.com",
       "preferDisplayUrl": false,
-      "url": "https://www.yext.com"
+      "url": "http://www.yext.com"
     }
   },
   "entityType": "yext/event",
