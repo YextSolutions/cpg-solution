@@ -1,0 +1,27 @@
+{
+  "$id": "36194896",
+  "$schema": "https://schema.yext.com/config/km/saved-filter/v1",
+  "name": "Answers - Events",
+  "filter": {
+    "entityField": [
+      {
+        "fieldId": "c_activeInAnswers",
+        "searchBool": "TRUE"
+      },
+      {
+        "dateTimePastFuture": {
+          "type": "FUTURE"
+        },
+        "fieldId": "yext/time.end"
+      }
+    ],
+    "entityType": [
+      {
+        "entityTypeId": [
+          "yext/event"
+        ],
+        "type": "IS"
+      }
+    ]
+  }
+}

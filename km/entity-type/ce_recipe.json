@@ -1,0 +1,66 @@
+{
+  "$id": "ce_recipe",
+  "$schema": "https://schema.yext.com/config/km/entity-type/v1",
+  "description": "Store all of the recipes your brand wants to feature using this entity type. ",
+  "displayName": "Recipe",
+  "enabled": true,
+  "field": [
+    {
+      "id": "yext/landingPageUrl",
+      "required": false
+    },
+    {
+      "id": "yext/description",
+      "required": false
+    },
+    {
+      "id": "yext/name",
+      "required": true
+    },
+    {
+      "id": "c_activeInAnswers",
+      "required": false
+    },
+    {
+      "id": "c_answersKeywords",
+      "required": false
+    },
+    {
+      "id": "c_ingredients",
+      "required": false
+    },
+    {
+      "id": "c_photo",
+      "required": false
+    },
+    {
+      "id": "c_preparationTime",
+      "required": false
+    },
+    {
+      "id": "c_primaryCTA",
+      "required": false
+    },
+    {
+      "id": "c_secondaryCTA",
+      "required": false
+    },
+    {
+      "id": "c_servings",
+      "required": false
+    },
+    {
+      "id": "yext/folder",
+      "required": false
+    },
+    {
+      "id": "yext/labels",
+      "required": false
+    },
+    {
+      "id": "yext/entityId",
+      "required": true
+    }
+  ],
+  "pluralDisplayName": "Recipes"
+}

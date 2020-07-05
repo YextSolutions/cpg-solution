@@ -1,0 +1,21 @@
+{
+  "$id": "36216492",
+  "$schema": "https://schema.yext.com/config/km/saved-filter/v1",
+  "name": "Answers - Recipes",
+  "filter": {
+    "entityField": [
+      {
+        "fieldId": "c_activeInAnswers",
+        "searchBool": "TRUE"
+      }
+    ],
+    "entityType": [
+      {
+        "entityTypeId": [
+          "ce_recipe"
+        ],
+        "type": "IS"
+      }
+    ]
+  }
+}
