@@ -4,8 +4,6 @@
   "content": {
     "c_activeInAnswers": true,
     "c_department": "Customer Service",
-    "c_jobCity": "New York",
-    "c_jobState": "NY",
     "c_relatedFAQs": [
       "FAQ1"
     ],
@@ -13,7 +11,20 @@
     "yext/employmentType": "FULL_TIME",
     "yext/hiringOrganization": "Yext",
     "yext/landingPageUrl": "https://www.yext.com",
-    "yext/name": "Customer Service Representative"
+    "yext/location": {
+      "externalLocation": "Austin, TX"
+    },
+    "yext/name": "Customer Service Representative",
+    "yext/yextBoundingBox": {
+      "northEast": {
+        "latitude": 30.5168629,
+        "longitude": -97.5684199
+      },
+      "southWest": {
+        "latitude": 30.0986589,
+        "longitude": -97.9383829
+      }
+    }
   },
   "entityType": "yext/job",
   "labels": []
