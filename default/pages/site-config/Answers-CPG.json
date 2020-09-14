@@ -1,7 +1,7 @@
 {
-  "$id": "Answers",
+  "$id": "Answers-CPG",
   "$schema": "https://schema.yext.com/config/pages/site-config/v1",
-  "siteName": "Answers",
+  "siteName": "Answers - CPG",
   "repoConfig": {
     "targetRepoName": "cpg-template-answers-site-${{businessId}}.com",
     "templateRepo": "github.com/yext-pages/answers-template-cpg-solution"
