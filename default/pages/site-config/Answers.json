@@ -3,7 +3,7 @@
   "$schema": "https://schema.yext.com/config/pages/site-config/v1",
   "siteName": "Answers",
   "repoConfig": {
-    "targetRepoName": "${{answers_github_repository_name}}",
+    "targetRepoName": "cpg-template-answers-site-${{businessId}}.com",
     "templateRepo": "github.com/yext-pages/answers-template-cpg-solution"
   },
   "publishingConfig": {
