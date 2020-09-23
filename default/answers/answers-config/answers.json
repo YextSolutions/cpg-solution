@@ -26,6 +26,9 @@
         },
         "time.start": {
           "sortable": true
+        },
+        "keywords": {
+          "textSearch": true
         }
       },
       "sortBys": [
@@ -51,6 +54,9 @@
           "nlpFilter": true
         },
         "name": {
+          "textSearch": true
+        },
+        "keywords": {
           "textSearch": true
         }
       },
@@ -79,6 +85,9 @@
         },
         "name": {
           "textSearch": true
+        },
+        "keywords": {
+          "textSearch": true
         }
       },
       "sortBys": [],
@@ -102,7 +111,7 @@
         "builtin.entityType": {
           "nlpFilter": true
         },
-        "c_answersKeywords": {
+        "keywords": {
           "textSearch": true
         },
         "c_productCategory": {
@@ -126,13 +135,13 @@
         "builtin.entityType": {
           "nlpFilter": true
         },
-        "c_answersKeywords": {
-          "textSearch": true
-        },
         "c_ingredients": {
           "textSearch": true
         },
         "name": {
+          "textSearch": true
+        },
+        "keywords": {
           "textSearch": true
         }
       },
