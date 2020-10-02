@@ -9,18 +9,7 @@
       "Flour"
     ],
     "c_photo": {
-      "image": {
-        "height": 214,
-        "thumbnails": [
-          {
-            "height": 177,
-            "url": "https://a.mktgcdn.com/p/3GqxdFs7NG5WA7ZU02zPNl-iMV9HTKVjbzTSgZP_oMM/196x177.jpg",
-            "width": 196
-          }
-        ],
-        "url": "https://a.mktgcdn.com/p/3GqxdFs7NG5WA7ZU02zPNl-iMV9HTKVjbzTSgZP_oMM/236x214.jpg",
-        "width": 236
-      }
+        "url": "https://a.mktgcdn.com/p/3GqxdFs7NG5WA7ZU02zPNl-iMV9HTKVjbzTSgZP_oMM/236x214.jpg"
     },
     "c_preparationTime": "1 hour, 15 minutes",
     "c_primaryCTA": {
