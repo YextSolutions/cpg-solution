@@ -537,12 +537,8 @@
                   "StringValue": "#"
                 }
               ],
-              "ListParamSource": {
-                "AlternateExternalEntityId": "",
-                "EntityTypeName": "location",
-                "RelationshipField": "",
-                "Reviews": false,
-                "SavedSearch": ""
+              "SavedSearchSource": {
+                "ExternalSearchId": "65749030"
               },
               "Sink": "items"
             }

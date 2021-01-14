@@ -255,11 +255,11 @@
               "Sink": "link2Url"
             }
           ],
-          "DefaultScss": "$gray1: #f0f2f4;\n$gray2: #313a47;\n$gray3: #8896a1;\n$gray4: #313a3c;\n$primary-color: var(--primary);\n\n.product-images {\n  border: 1px solid $gray1;\n  padding: 20px 50px;\n  height: 100%;\n  @include media-breakpoint-up(sm) {\n    max-width: calc(50% - 0.5rem);\n  }\n\n  \u0026-container {\n    margin: auto;\n\n    @include media-breakpoint-up(sm) {\n      max-width: 250px;\n    }\n\n    @include media-breakpoint-up(md) {\n      max-width: 350px;\n    }\n  }\n\n  \u0026-main {\n    height: 100%;\n    width: 100%;\n    max-height: 500px;\n    margin: 0;\n\n    \u0026-image {\n      display: flex;\n      position: relative;\n\n      \u0026::after {\n        display: block;\n        content: \u0027\u0027;\n        padding-bottom: 100%;\n      }\n    }\n  }\n\n  \u0026-thumbnails {\n    display: flex;\n\n    \u0026-thumbnail {\n      display: none;\n      padding: 0;\n      margin: 0 3px;\n      position: relative;\n      border: 1px solid transparent;\n      max-width: 30%;\n\n      \u0026::after {\n        display: block;\n        content: \u0027\u0027;\n        padding-bottom: 100%;\n      }\n\n      \u0026.active {\n        display: flex;\n      }\n\n      img {\n        cursor: pointer;\n      }\n\n      \u0026.selected {\n        border: 1px solid $primary-color;\n        border-radius: 3px;\n      }\n    }\n  }\n\n  img {\n    width: 100%;\n    height: 100%;\n    object-fit: contain;\n    display: block;\n    position: absolute;\n  }\n}\n\n.lp-param-photoGallery {\n  margin-top: 20px;\n  justify-content: space-evenly;\n}\n\n.lp-param-name {\n  font-size: 32px;\n  color: $gray4;\n}\n\n.lp-product-summary {\n  display: flex;\n  white-space: nowrap;\n\n  \u0026-size, \u0026-color {\n    font-size: 21px;\n    color: $gray2;\n    font-weight: bold;\n  }\n\n  \u0026-size {\n    margin-right: 15px;\n  }\n\n  \u0026-stockStatus {\n    font-size: 21px;\n    color: $gray2;\n  }\n\n  \u0026-divider {\n    border-left: 3px solid $gray2;\n    margin: 5px;\n  }\n}\n\n.lp-param-description {\n  font-size: 16px;\n\n  p {\n    margin-block-end: 0;\n    margin-block-start: 0;\n  }\n}\n\n.lp-param-price {\n  color: $primary-color;\n  font-size: 32px;\n\n  \u0026.mobile-view {\n    font-size: 21px;\n  }\n}\n\n.lp-param-buttons {\n  display: flex;\n  justify-content: center;\n  flex-direction: column;\n\n  @include media-breakpoint-up(sm) {\n    justify-content: normal;\n    flex-direction: unset;\n  }\n}\n\n.btn {\n  font-size: 16px;\n  width: 100%;\n  margin: 10px 0;\n  color: white;\n\n  \u0026:not(:last-child) {\n    @include media-breakpoint-up(sm) {\n      margin-right: 15px;\n    }\n  }\n\n  \u0026:last-child {\n    background-color: $gray4;\n    border-color: $gray4;\n  }\n\n  @include media-breakpoint-up(sm) {\n    width: auto;\n    margin: 0;\n  }\n}\n\n@mixin large-arrow {\n  border-bottom: 15px solid transparent;\n  border-top: 15px solid transparent;\n}\n\n@mixin small-arrow {\n  border-bottom: 10px solid transparent;\n  border-top: 10px solid transparent;\n}\n\n@mixin large-left-arrow {\n  border-right: 10px solid $gray3;\n}\n\n@mixin small-left-arrow {\n  border-right: 5px solid $gray3;\n}\n\n@mixin large-right-arrow {\n  border-left: 10px solid $gray3;\n}\n\n@mixin small-right-arrow {\n  border-left: 5px solid $gray3;\n}\n\n.lp-arrow {\n  width: 0;\n  height: 0;\n  opacity: 0.5;\n  @include large-arrow;\n\n  @include media-breakpoint-up(sm) {\n    @include small-arrow;\n  }\n  @include media-breakpoint-up(md) {\n    @include large-arrow;\n  }\n\n  \u0026.arrow-left {\n    @include large-left-arrow;\n\n    @include media-breakpoint-up(sm) {\n      @include small-left-arrow;\n    }\n    @include media-breakpoint-up(md) {\n      @include large-left-arrow;\n    }\n  }\n\n  \u0026.arrow-right {\n    @include large-right-arrow;\n\n    @include media-breakpoint-up(sm) {\n      @include small-right-arrow;\n    }\n    @include media-breakpoint-up(md) {\n      @include large-right-arrow;\n    }\n  }\n\n  \u0026.active {\n    opacity: 1;\n    cursor: pointer;\n  }\n\n  \u0026.hide {\n    display: none;\n  }\n}\n\n.mobile-view {\n  display: flex;\n  @include media-breakpoint-up(sm) {\n    display: none;\n  }\n}\n\n.desktop-view {\n  display: none;\n  @include media-breakpoint-up(sm) {\n    display: flex;\n  }\n}\n",
+          "DefaultScss": "$gray1: #f0f2f4;\n$gray2: #313a47;\n$gray3: #8896a1;\n$gray4: #313a3c;\n$primary-color: var(--primary);\n\n.module-product-details {\n  padding: 2rem 0;\n\n  \u0026__container{\n    margin-left: 0.5rem;\n  }\n}\n\n.product-images {\n  border: 1px solid $gray1;\n  padding: 20px 50px;\n  height: 100%;\n  @include media-breakpoint-up(sm) {\n    max-width: calc(50% - 1rem);\n  }\n\n  \u0026-container {\n    margin: auto;\n\n    @include media-breakpoint-up(sm) {\n      max-width: 250px;\n    }\n\n    @include media-breakpoint-up(md) {\n      max-width: 350px;\n    }\n  }\n\n  \u0026-main {\n    height: 100%;\n    width: 100%;\n    max-height: 500px;\n    margin: 0;\n\n    \u0026-image {\n      display: flex;\n      position: relative;\n\n      \u0026::after {\n        display: block;\n        content: \u0027\u0027;\n        padding-bottom: 100%;\n      }\n    }\n  }\n\n  \u0026-thumbnails {\n    display: flex;\n\n    \u0026-thumbnail {\n      display: none;\n      padding: 0;\n      margin: 0 3px;\n      position: relative;\n      border: 1px solid transparent;\n      max-width: 30%;\n\n      \u0026::after {\n        display: block;\n        content: \u0027\u0027;\n        padding-bottom: 100%;\n      }\n\n      \u0026.active {\n        display: flex;\n      }\n\n      img {\n        cursor: pointer;\n      }\n\n      \u0026.selected {\n        border: 1px solid $primary-color;\n        border-radius: 3px;\n      }\n    }\n  }\n\n  img {\n    width: 100%;\n    height: 100%;\n    object-fit: contain;\n    display: block;\n    position: absolute;\n  }\n}\n\n.lp-param-photoGallery {\n  margin-top: 20px;\n  justify-content: space-evenly;\n}\n\n.lp-param-name {\n  font-size: 32px;\n  color: $gray4;\n}\n\n.lp-product-right-column {\n  margin-left: 0.5rem;\n}\n\n.lp-product-summary {\n  padding-bottom: 4px;\n  display: flex;\n  white-space: nowrap;\n  margin-bottom: 0.25rem;\n\n  \u0026-size, \u0026-color {\n    font-size: 21px;\n    color: $gray2;\n    font-weight: bold;\n  }\n\n  \u0026-stockStatus {\n    font-size: 21px;\n    color: $gray2;\n    margin-left: 15px;\n  }\n\n  \u0026-divider {\n    border-left: 3px solid $gray2;\n    margin: 5px;\n  }\n}\n\n.lp-param-description {\n  font-size: 16px;\n  margin: 0.5rem 0;\n\n  p {\n    margin-block-end: 0;\n    margin-block-start: 0;\n  }\n}\n\n.lp-param-price {\n  color: $primary-color;\n  font-size: 32px;\n  margin-bottom: 0.5rem;\n\n  \u0026.mobile-view {\n    font-size: 21px;\n  }\n}\n\n.lp-param-buttons {\n  display: flex;\n  justify-content: center;\n  flex-direction: column;\n\n  @include media-breakpoint-up(sm) {\n    justify-content: normal;\n    flex-direction: unset;\n  }\n}\n\n.btn {\n  font-size: 16px;\n  width: 100%;\n  margin: 10px 0;\n  color: white;\n\n  \u0026:not(:last-child) {\n    @include media-breakpoint-up(sm) {\n      margin-right: 15px;\n    }\n  }\n\n  \u0026:last-child {\n    background-color: $gray4;\n    border-color: $gray4;\n  }\n\n  @include media-breakpoint-up(sm) {\n    width: auto;\n    margin: 0;\n  }\n}\n\n@mixin large-arrow {\n  border-bottom: 15px solid transparent;\n  border-top: 15px solid transparent;\n}\n\n@mixin small-arrow {\n  border-bottom: 10px solid transparent;\n  border-top: 10px solid transparent;\n}\n\n@mixin large-left-arrow {\n  border-right: 10px solid $gray3;\n}\n\n@mixin small-left-arrow {\n  border-right: 5px solid $gray3;\n}\n\n@mixin large-right-arrow {\n  border-left: 10px solid $gray3;\n}\n\n@mixin small-right-arrow {\n  border-left: 5px solid $gray3;\n}\n\n.lp-arrow {\n  width: 0;\n  height: 0;\n  opacity: 0.5;\n  @include large-arrow;\n\n  @include media-breakpoint-up(sm) {\n    @include small-arrow;\n  }\n  @include media-breakpoint-up(md) {\n    @include large-arrow;\n  }\n\n  \u0026.arrow-left {\n    @include large-left-arrow;\n\n    @include media-breakpoint-up(sm) {\n      @include small-left-arrow;\n    }\n    @include media-breakpoint-up(md) {\n      @include large-left-arrow;\n    }\n  }\n\n  \u0026.arrow-right {\n    @include large-right-arrow;\n\n    @include media-breakpoint-up(sm) {\n      @include small-right-arrow;\n    }\n    @include media-breakpoint-up(md) {\n      @include large-right-arrow;\n    }\n  }\n\n  \u0026.active {\n    opacity: 1;\n    cursor: pointer;\n  }\n\n  \u0026.hide {\n    display: none;\n  }\n}\n\n.mobile-view {\n  display: flex;\n  @include media-breakpoint-up(sm) {\n    display: none;\n  }\n}\n\n.desktop-view {\n  display: none;\n  @include media-breakpoint-up(sm) {\n    display: flex;\n  }\n}\n",
           "Js": "",
           "ListParamEntries": [],
           "ModuleId": "uughOyLvOU",
-          "Scss": "$gray1: #f0f2f4;\n$gray2: #313a47;\n$gray3: #8896a1;\n$gray4: #313a3c;\n$primary-color: var(--primary);\n\n.product-images {\n  border: 1px solid $gray1;\n  padding: 20px 50px;\n  height: 100%;\n  @include media-breakpoint-up(sm) {\n    max-width: calc(50% - 0.5rem);\n  }\n\n  \u0026-container {\n    margin: auto;\n\n    @include media-breakpoint-up(sm) {\n      max-width: 250px;\n    }\n\n    @include media-breakpoint-up(md) {\n      max-width: 350px;\n    }\n  }\n\n  \u0026-main {\n    height: 100%;\n    width: 100%;\n    max-height: 500px;\n    margin: 0;\n\n    \u0026-image {\n      display: flex;\n      position: relative;\n\n      \u0026::after {\n        display: block;\n        content: \u0027\u0027;\n        padding-bottom: 100%;\n      }\n    }\n  }\n\n  \u0026-thumbnails {\n    display: flex;\n\n    \u0026-thumbnail {\n      display: none;\n      padding: 0;\n      margin: 0 3px;\n      position: relative;\n      border: 1px solid transparent;\n      max-width: 30%;\n\n      \u0026::after {\n        display: block;\n        content: \u0027\u0027;\n        padding-bottom: 100%;\n      }\n\n      \u0026.active {\n        display: flex;\n      }\n\n      img {\n        cursor: pointer;\n      }\n\n      \u0026.selected {\n        border: 1px solid $primary-color;\n        border-radius: 3px;\n      }\n    }\n  }\n\n  img {\n    width: 100%;\n    height: 100%;\n    object-fit: contain;\n    display: block;\n    position: absolute;\n  }\n}\n\n.lp-param-photoGallery {\n  margin-top: 20px;\n  justify-content: space-evenly;\n}\n\n.lp-param-name {\n  font-size: 32px;\n  color: $gray4;\n}\n\n.lp-product-summary {\n  display: flex;\n  white-space: nowrap;\n\n  \u0026-size, \u0026-color {\n    font-size: 21px;\n    color: $gray2;\n    font-weight: bold;\n  }\n\n  \u0026-size {\n    margin-right: 15px;\n  }\n\n  \u0026-stockStatus {\n    font-size: 21px;\n    color: $gray2;\n  }\n\n  \u0026-divider {\n    border-left: 3px solid $gray2;\n    margin: 5px;\n  }\n}\n\n.lp-param-description {\n  font-size: 16px;\n\n  p {\n    margin-block-end: 0;\n    margin-block-start: 0;\n  }\n}\n\n.lp-param-price {\n  color: $primary-color;\n  font-size: 32px;\n\n  \u0026.mobile-view {\n    font-size: 21px;\n  }\n}\n\n.lp-param-buttons {\n  display: flex;\n  justify-content: center;\n  flex-direction: column;\n\n  @include media-breakpoint-up(sm) {\n    justify-content: normal;\n    flex-direction: unset;\n  }\n}\n\n.btn {\n  font-size: 16px;\n  width: 100%;\n  margin: 10px 0;\n  color: white;\n\n  \u0026:not(:last-child) {\n    @include media-breakpoint-up(sm) {\n      margin-right: 15px;\n    }\n  }\n\n  \u0026:last-child {\n    background-color: $gray4;\n    border-color: $gray4;\n  }\n\n  @include media-breakpoint-up(sm) {\n    width: auto;\n    margin: 0;\n  }\n}\n\n@mixin large-arrow {\n  border-bottom: 15px solid transparent;\n  border-top: 15px solid transparent;\n}\n\n@mixin small-arrow {\n  border-bottom: 10px solid transparent;\n  border-top: 10px solid transparent;\n}\n\n@mixin large-left-arrow {\n  border-right: 10px solid $gray3;\n}\n\n@mixin small-left-arrow {\n  border-right: 5px solid $gray3;\n}\n\n@mixin large-right-arrow {\n  border-left: 10px solid $gray3;\n}\n\n@mixin small-right-arrow {\n  border-left: 5px solid $gray3;\n}\n\n.lp-arrow {\n  width: 0;\n  height: 0;\n  opacity: 0.5;\n  @include large-arrow;\n\n  @include media-breakpoint-up(sm) {\n    @include small-arrow;\n  }\n  @include media-breakpoint-up(md) {\n    @include large-arrow;\n  }\n\n  \u0026.arrow-left {\n    @include large-left-arrow;\n\n    @include media-breakpoint-up(sm) {\n      @include small-left-arrow;\n    }\n    @include media-breakpoint-up(md) {\n      @include large-left-arrow;\n    }\n  }\n\n  \u0026.arrow-right {\n    @include large-right-arrow;\n\n    @include media-breakpoint-up(sm) {\n      @include small-right-arrow;\n    }\n    @include media-breakpoint-up(md) {\n      @include large-right-arrow;\n    }\n  }\n\n  \u0026.active {\n    opacity: 1;\n    cursor: pointer;\n  }\n\n  \u0026.hide {\n    display: none;\n  }\n}\n\n.mobile-view {\n  display: flex;\n  @include media-breakpoint-up(sm) {\n    display: none;\n  }\n}\n\n.desktop-view {\n  display: none;\n  @include media-breakpoint-up(sm) {\n    display: flex;\n  }\n}\n"
+          "Scss": "$gray1: #f0f2f4;\n$gray2: #313a47;\n$gray3: #8896a1;\n$gray4: #313a3c;\n$primary-color: var(--primary);\n\n.module-product-details {\n  padding: 2rem 0;\n\n  \u0026__container{\n    margin-left: 0.5rem;\n  }\n}\n\n.product-images {\n  border: 1px solid $gray1;\n  padding: 20px 50px;\n  height: 100%;\n  @include media-breakpoint-up(sm) {\n    max-width: calc(50% - 1rem);\n  }\n\n  \u0026-container {\n    margin: auto;\n\n    @include media-breakpoint-up(sm) {\n      max-width: 250px;\n    }\n\n    @include media-breakpoint-up(md) {\n      max-width: 350px;\n    }\n  }\n\n  \u0026-main {\n    height: 100%;\n    width: 100%;\n    max-height: 500px;\n    margin: 0;\n\n    \u0026-image {\n      display: flex;\n      position: relative;\n\n      \u0026::after {\n        display: block;\n        content: \u0027\u0027;\n        padding-bottom: 100%;\n      }\n    }\n  }\n\n  \u0026-thumbnails {\n    display: flex;\n\n    \u0026-thumbnail {\n      display: none;\n      padding: 0;\n      margin: 0 3px;\n      position: relative;\n      border: 1px solid transparent;\n      max-width: 30%;\n\n      \u0026::after {\n        display: block;\n        content: \u0027\u0027;\n        padding-bottom: 100%;\n      }\n\n      \u0026.active {\n        display: flex;\n      }\n\n      img {\n        cursor: pointer;\n      }\n\n      \u0026.selected {\n        border: 1px solid $primary-color;\n        border-radius: 3px;\n      }\n    }\n  }\n\n  img {\n    width: 100%;\n    height: 100%;\n    object-fit: contain;\n    display: block;\n    position: absolute;\n  }\n}\n\n.lp-param-photoGallery {\n  margin-top: 20px;\n  justify-content: space-evenly;\n}\n\n.lp-param-name {\n  font-size: 32px;\n  color: $gray4;\n}\n\n.lp-product-right-column {\n  margin-left: 0.5rem;\n}\n\n.lp-product-summary {\n  padding-bottom: 4px;\n  display: flex;\n  white-space: nowrap;\n  margin-bottom: 0.25rem;\n\n  \u0026-size, \u0026-color {\n    font-size: 21px;\n    color: $gray2;\n    font-weight: bold;\n  }\n\n  \u0026-stockStatus {\n    font-size: 21px;\n    color: $gray2;\n    margin-left: 15px;\n  }\n\n  \u0026-divider {\n    border-left: 3px solid $gray2;\n    margin: 5px;\n  }\n}\n\n.lp-param-description {\n  font-size: 16px;\n  margin: 0.5rem 0;\n\n  p {\n    margin-block-end: 0;\n    margin-block-start: 0;\n  }\n}\n\n.lp-param-price {\n  color: $primary-color;\n  font-size: 32px;\n  margin-bottom: 0.5rem;\n\n  \u0026.mobile-view {\n    font-size: 21px;\n  }\n}\n\n.lp-param-buttons {\n  display: flex;\n  justify-content: center;\n  flex-direction: column;\n\n  @include media-breakpoint-up(sm) {\n    justify-content: normal;\n    flex-direction: unset;\n  }\n}\n\n.btn {\n  font-size: 16px;\n  width: 100%;\n  margin: 10px 0;\n  color: white;\n\n  \u0026:not(:last-child) {\n    @include media-breakpoint-up(sm) {\n      margin-right: 15px;\n    }\n  }\n\n  \u0026:last-child {\n    background-color: $gray4;\n    border-color: $gray4;\n  }\n\n  @include media-breakpoint-up(sm) {\n    width: auto;\n    margin: 0;\n  }\n}\n\n@mixin large-arrow {\n  border-bottom: 15px solid transparent;\n  border-top: 15px solid transparent;\n}\n\n@mixin small-arrow {\n  border-bottom: 10px solid transparent;\n  border-top: 10px solid transparent;\n}\n\n@mixin large-left-arrow {\n  border-right: 10px solid $gray3;\n}\n\n@mixin small-left-arrow {\n  border-right: 5px solid $gray3;\n}\n\n@mixin large-right-arrow {\n  border-left: 10px solid $gray3;\n}\n\n@mixin small-right-arrow {\n  border-left: 5px solid $gray3;\n}\n\n.lp-arrow {\n  width: 0;\n  height: 0;\n  opacity: 0.5;\n  @include large-arrow;\n\n  @include media-breakpoint-up(sm) {\n    @include small-arrow;\n  }\n  @include media-breakpoint-up(md) {\n    @include large-arrow;\n  }\n\n  \u0026.arrow-left {\n    @include large-left-arrow;\n\n    @include media-breakpoint-up(sm) {\n      @include small-left-arrow;\n    }\n    @include media-breakpoint-up(md) {\n      @include large-left-arrow;\n    }\n  }\n\n  \u0026.arrow-right {\n    @include large-right-arrow;\n\n    @include media-breakpoint-up(sm) {\n      @include small-right-arrow;\n    }\n    @include media-breakpoint-up(md) {\n      @include large-right-arrow;\n    }\n  }\n\n  \u0026.active {\n    opacity: 1;\n    cursor: pointer;\n  }\n\n  \u0026.hide {\n    display: none;\n  }\n}\n\n.mobile-view {\n  display: flex;\n  @include media-breakpoint-up(sm) {\n    display: none;\n  }\n}\n\n.desktop-view {\n  display: none;\n  @include media-breakpoint-up(sm) {\n    display: flex;\n  }\n}\n"
         },
         {
           "ContentMapEntries": [
@@ -570,11 +570,11 @@
               "StringValue": "#"
             }
           ],
-          "DefaultScss": "padding: 2rem 0;\n\n.image {\n    width: 100%;\n}\n\n.left-column {\n    // Not included in IE\n    @supports not (-ms-high-contrast: none) {\n        display: flex;\n        flex-direction: column;\n        justify-content: center;\n    }\n\n    img.image {\n    }\n}\n\n.right-column {\n    // Not included in IE\n    @supports not (-ms-high-contrast: none) {\n        display: flex;\n        flex-direction: column;\n        justify-content: flex-start;\n    }\n\n    .headline {\n        margin-bottom: 16px;\n    }\n\n    img.image {\n        display: none; // Hidden on Desktop\n        margin-bottom: 16px;\n    }\n\n    .paragraph {\n      margin-bottom: 1rem;\n    }\n\n    .cta-container {\n        .cta {\n        }\n    }\n}\n\n// Style for mobile\n$grid-breakpoints: (\n  xs: 0,\n  sm: 576px,\n  md: 768px,\n  lg: 992px,\n  xl: 1200px\n) !default;\n\n @media (max-width: map-get($grid-breakpoints, \"md\")) {\n    .left-column {\n        display: none;\n    }\n\n    .right-column {\n        .headline {\n            text-align: center;\n        }\n\n        img.image {\n            display: block;\n        }\n\n        .cta-container {\n            text-align: center;\n        }\n    }\n\n }\n\n",
+          "DefaultScss": "padding: 2rem 0;\n\n.image {\n    width: 100%;\n}\n\n.left-column {\n    // Not included in IE\n    @supports not (-ms-high-contrast: none) {\n        display: flex;\n        flex-direction: column;\n        justify-content: center;\n    }\n\n    img.image {\n    }\n}\n\n.right-column {\n    // Not included in IE\n    @supports not (-ms-high-contrast: none) {\n        display: flex;\n        flex-direction: column;\n        justify-content: flex-start;\n    }\n\n    .headline {\n        margin-bottom: 16px;\n    }\n\n    img.image {\n        display: none; // Hidden on Desktop\n        margin-bottom: 16px;\n    }\n\n    .paragraph {\n      margin-bottom: 1rem;\n    }\n\n    .cta-container {\n        .cta {\n        }\n    }\n}\n\n// Style for mobile\n$grid-breakpoints: (\n  xs: 0,\n  sm: 576px,\n  md: 768px,\n  lg: 992px,\n  xl: 1200px\n) !default;\n\n @media (max-width: map-get($grid-breakpoints, \"md\")) {\n    .left-column {\n        display: none;\n    }\n\n    .right-column {\n      flex: auto;\n      max-width: 100%;\n\n      .headline {\n          text-align: center;\n      }\n\n      img.image {\n          display: block;\n      }\n\n      .cta-container {\n          text-align: center;\n      }\n    }\n\n }\n\n",
           "Js": "",
           "ListParamEntries": [],
           "ModuleId": "u9B-IwQUbv",
-          "Scss": "padding: 2rem 0;\n\n.image {\n    width: 100%;\n}\n\n.left-column {\n    // Not included in IE\n    @supports not (-ms-high-contrast: none) {\n        display: flex;\n        flex-direction: column;\n        justify-content: center;\n    }\n\n    img.image {\n    }\n}\n\n.right-column {\n    // Not included in IE\n    @supports not (-ms-high-contrast: none) {\n        display: flex;\n        flex-direction: column;\n        justify-content: flex-start;\n    }\n\n    .headline {\n        margin-bottom: 16px;\n    }\n\n    img.image {\n        display: none; // Hidden on Desktop\n        margin-bottom: 16px;\n    }\n\n    .paragraph {\n      margin-bottom: 1rem;\n    }\n\n    .cta-container {\n        .cta {\n        }\n    }\n}\n\n// Style for mobile\n$grid-breakpoints: (\n  xs: 0,\n  sm: 576px,\n  md: 768px,\n  lg: 992px,\n  xl: 1200px\n) !default;\n\n @media (max-width: map-get($grid-breakpoints, \"md\")) {\n    .left-column {\n        display: none;\n    }\n\n    .right-column {\n        .headline {\n            text-align: center;\n        }\n\n        img.image {\n            display: block;\n        }\n\n        .cta-container {\n            text-align: center;\n        }\n    }\n\n }\n\n"
+          "Scss": "padding: 2rem 0;\n\n.image {\n    width: 100%;\n}\n\n.left-column {\n    // Not included in IE\n    @supports not (-ms-high-contrast: none) {\n        display: flex;\n        flex-direction: column;\n        justify-content: center;\n    }\n\n    img.image {\n    }\n}\n\n.right-column {\n    // Not included in IE\n    @supports not (-ms-high-contrast: none) {\n        display: flex;\n        flex-direction: column;\n        justify-content: flex-start;\n    }\n\n    .headline {\n        margin-bottom: 16px;\n    }\n\n    img.image {\n        display: none; // Hidden on Desktop\n        margin-bottom: 16px;\n    }\n\n    .paragraph {\n      margin-bottom: 1rem;\n    }\n\n    .cta-container {\n        .cta {\n        }\n    }\n}\n\n// Style for mobile\n$grid-breakpoints: (\n  xs: 0,\n  sm: 576px,\n  md: 768px,\n  lg: 992px,\n  xl: 1200px\n) !default;\n\n @media (max-width: map-get($grid-breakpoints, \"md\")) {\n    .left-column {\n        display: none;\n    }\n\n    .right-column {\n      flex: auto;\n      max-width: 100%;\n\n      .headline {\n          text-align: center;\n      }\n\n      img.image {\n          display: block;\n      }\n\n      .cta-container {\n          text-align: center;\n      }\n    }\n\n }\n\n"
         },
         {
           "ContentMapEntries": [
@@ -633,103 +633,6 @@
           "ListParamEntries": [],
           "ModuleId": "9uRTQbPUOU",
           "Scss": ".module {\n  \u0026-divider {\n    padding: 0;\n\n    .hr {\n      width: 100%;\n      height: 1px;\n      background-color: #e5e5e5; // this is the default \u003chr\u003e color\n    }\n  }\n}\n"
-        },
-        {
-          "ContentMapEntries": [
-            {
-              "ExternalEntityId": "",
-              "InputType": "CONSTANT",
-              "Sink": "headline",
-              "StringValue": "Offered at our Locations"
-            }
-          ],
-          "DefaultScss": "$spacer: 1rem;\n\n// Variables for description text truncation\n$lh: 22;\n$line-height: 22px;\n\n$max-height: 180px;\n$mh: 180;\n$max-num-lines: floor($mh / $lh);\n\n$max-height-tablet: 90px;\n$mht: 90;\n$max-num-lines-tablet: floor($mht / $lh);\n\n$max-height-desktop: 68px;\n$mhd: 68;\n$max-num-lines-desktop: floor($mhd / $lh);\n\n.module-container {\n  padding: ($spacer * 2) 15px;\n}\n\nul {\n  padding-inline-start: 0;\n  margin: 0 $spacer;\n}\n\n.row {\n  justify-content: center;\n}\n\n.headline {\n  font-size: 2em;\n  margin-bottom: $spacer;\n\n  @include media-breakpoint-down(sm) {\n    text-align: center;\n  }\n}\n\n.item-col {\n  margin-bottom: $spacer;\n  @include media-breakpoint-down(sm) {\n    text-align: center;\n  }\n}\n\n.section {\n  margin: $spacer $spacer 0;\n  font-size: 1em;\n  word-break: break-word;\n}\n\n.item {\n  height: 100%;\n  position: relative;\n  background-color: #f2f2f2;\n  text-align: left;\n  display: flex;\n  flex-direction: column;\n}\n\n.image {\n  object-fit: contain;\n  max-width: 100%;\n  width: 100%;\n\n  \u0026-container {\n    flex-shrink: 0;\n  }\n}\n\n.content-container {\n  height: 100%;\n  display: flex;\n  flex-direction: column;\n  padding-bottom: $spacer;\n}\n\n.title {\n  font-size: 1.5em;\n  font-weight: normal;\n  word-break: break-word;\n}\n\n.subtitle {\n  font-size: 1.25em;\n  font-weight: normal;\n}\n\n.address {}\n\n.phone {}\n\n.email {}\n\n.description, .description-text {\n  max-height: $max-height;\n\n  @include media-breakpoint-up(sm) {\n    max-height: $max-height-tablet;\n  }\n\n  @include media-breakpoint-up(lg) {\n    max-height: $max-height-desktop;\n  }\n}\n\n.description-text {\n  -webkit-line-clamp: $max-num-lines;\n  display: -webkit-box;\n  -webkit-box-orient: vertical;\n  overflow: hidden;\n\n  @include media-breakpoint-up(sm) {\n    -webkit-line-clamp: $max-num-lines-tablet;\n  }\n\n  @include media-breakpoint-up(lg) {\n    -webkit-line-clamp: $max-num-lines-desktop;\n  }\n}\n\n.text-list {}\n\n.list-item {\n  margin-left: -5px;\n}\n\n.cta {\n  font-size: 1em;\n  text-decoration: none;\n\n  \u0026-container {\n    display: flex;\n    align-items: flex-end;\n    flex: 1;\n  }\n}\n",
-          "Js": "",
-          "ListParamEntries": [
-            {
-              "ContentMapEntries": [
-                {
-                  "ExternalEntityId": "",
-                  "InputType": "",
-                  "Sink": "image"
-                },
-                {
-                  "ExternalEntityId": "",
-                  "InputType": "FIELD",
-                  "SelectedField": [
-                    "name"
-                  ],
-                  "Sink": "title"
-                },
-                {
-                  "ExternalEntityId": "",
-                  "InputType": "FIELD",
-                  "SelectedField": [
-                    "none"
-                  ],
-                  "Sink": "subtitle"
-                },
-                {
-                  "ExternalEntityId": "",
-                  "InputType": "",
-                  "SelectedField": [
-                    "address"
-                  ],
-                  "Sink": "address"
-                },
-                {
-                  "ExternalEntityId": "",
-                  "InputType": "",
-                  "SelectedField": [
-                    "mainPhone"
-                  ],
-                  "Sink": "phone"
-                },
-                {
-                  "ExternalEntityId": "",
-                  "InputType": "",
-                  "SelectedField": [
-                    "none"
-                  ],
-                  "Sink": "email"
-                },
-                {
-                  "ExternalEntityId": "",
-                  "InputType": "FIELD",
-                  "SelectedField": [
-                    "none"
-                  ],
-                  "Sink": "description"
-                },
-                {
-                  "ExternalEntityId": "",
-                  "InputType": "",
-                  "SelectedField": [
-                    "none"
-                  ],
-                  "Sink": "textList"
-                },
-                {
-                  "ExternalEntityId": "",
-                  "InputType": "",
-                  "Sink": "infoLinkText",
-                  "StringValue": "Link Here"
-                },
-                {
-                  "ExternalEntityId": "",
-                  "InputType": "",
-                  "Sink": "infoLink",
-                  "StringValue": "#"
-                }
-              ],
-              "SavedSearchSource": {
-                "ExternalSearchId": "64221105"
-              },
-              "Sink": "items"
-            }
-          ],
-          "ModuleId": "uHoZTlnvbR",
-          "Scss": "$spacer: 1rem;\n\n// Variables for description text truncation\n$lh: 22;\n$line-height: 22px;\n\n$max-height: 180px;\n$mh: 180;\n$max-num-lines: floor($mh / $lh);\n\n$max-height-tablet: 90px;\n$mht: 90;\n$max-num-lines-tablet: floor($mht / $lh);\n\n$max-height-desktop: 68px;\n$mhd: 68;\n$max-num-lines-desktop: floor($mhd / $lh);\n\n.module-container {\n  padding: ($spacer * 2) 15px;\n}\n\nul {\n  padding-inline-start: 0;\n  margin: 0 $spacer;\n}\n\n.row {\n  justify-content: center;\n}\n\n.headline {\n  font-size: 2em;\n  margin-bottom: $spacer;\n\n  @include media-breakpoint-down(sm) {\n    text-align: center;\n  }\n}\n\n.item-col {\n  margin-bottom: $spacer;\n  @include media-breakpoint-down(sm) {\n    text-align: center;\n  }\n}\n\n.section {\n  margin: $spacer $spacer 0;\n  font-size: 1em;\n  word-break: break-word;\n}\n\n.item {\n  height: 100%;\n  position: relative;\n  background-color: #f2f2f2;\n  text-align: left;\n  display: flex;\n  flex-direction: column;\n}\n\n.image {\n  object-fit: contain;\n  max-width: 100%;\n  width: 100%;\n\n  \u0026-container {\n    flex-shrink: 0;\n  }\n}\n\n.content-container {\n  height: 100%;\n  display: flex;\n  flex-direction: column;\n  padding-bottom: $spacer;\n}\n\n.title {\n  font-size: 1.5em;\n  font-weight: normal;\n  word-break: break-word;\n}\n\n.subtitle {\n  font-size: 1.25em;\n  font-weight: normal;\n}\n\n.address {}\n\n.phone {}\n\n.email {}\n\n.description, .description-text {\n  max-height: $max-height;\n\n  @include media-breakpoint-up(sm) {\n    max-height: $max-height-tablet;\n  }\n\n  @include media-breakpoint-up(lg) {\n    max-height: $max-height-desktop;\n  }\n}\n\n.description-text {\n  -webkit-line-clamp: $max-num-lines;\n  display: -webkit-box;\n  -webkit-box-orient: vertical;\n  overflow: hidden;\n\n  @include media-breakpoint-up(sm) {\n    -webkit-line-clamp: $max-num-lines-tablet;\n  }\n\n  @include media-breakpoint-up(lg) {\n    -webkit-line-clamp: $max-num-lines-desktop;\n  }\n}\n\n.text-list {}\n\n.list-item {\n  margin-left: -5px;\n}\n\n.cta {\n  font-size: 1em;\n  text-decoration: none;\n\n  \u0026-container {\n    display: flex;\n    align-items: flex-end;\n    flex: 1;\n  }\n}\n"
         },
         {
           "ContentMapEntries": [
@@ -885,37 +788,31 @@
         "DisplayNameOverride": "",
         "Id": "HHQh8ydRTU",
         "Module": "nav_bar",
-        "Version": 54
+        "Version": 37
       },
       {
         "DisplayNameOverride": "",
         "Id": "u9gK8lqvTv",
         "Module": "announcement_bar_2",
-        "Version": 21
+        "Version": 14
       },
       {
         "DisplayNameOverride": "",
         "Id": "uughOyLvOU",
         "Module": "product_details",
-        "Version": 2
+        "Version": 4
       },
       {
         "DisplayNameOverride": "",
         "Id": "9uRTQbPUOU",
         "Module": "divider",
-        "Version": 16
+        "Version": 13
       },
       {
         "DisplayNameOverride": "Product Features",
         "Id": "9unXKwgUOv",
         "Module": "centered_text_list",
-        "Version": 30
-      },
-      {
-        "DisplayNameOverride": "Related Locations",
-        "Id": "uHoZTlnvbR",
-        "Module": "item_list_i",
-        "Version": 20
+        "Version": 13
       },
       {
         "DisplayNameOverride": "Related Products",
@@ -933,19 +830,19 @@
         "DisplayNameOverride": "About Your Brand",
         "Id": "u9B-IwQUbv",
         "Module": "about_this_page",
-        "Version": 63
+        "Version": 30
       },
       {
         "DisplayNameOverride": "",
         "Id": "99jpqGm_O_",
         "Module": "app_download",
-        "Version": 196
+        "Version": 17
       },
       {
         "DisplayNameOverride": "",
         "Id": "JuPh8BLRbR",
         "Module": "footer",
-        "Version": 54
+        "Version": 20
       }
     ],
     "Path": "",
@@ -954,6 +851,6 @@
       "Path": ""
     },
     "Theme": "cosmo",
-    "ThemeVersion": 17
+    "ThemeVersion": 1
   }
 }

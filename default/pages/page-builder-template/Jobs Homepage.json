@@ -534,12 +534,8 @@
                   "Sink": "infoLink"
                 }
               ],
-              "ListParamSource": {
-                "AlternateExternalEntityId": "",
-                "EntityTypeName": "location",
-                "RelationshipField": "",
-                "Reviews": false,
-                "SavedSearch": ""
+              "SavedSearchSource": {
+                "ExternalSearchId": "443106728"
               },
               "Sink": "items"
             }
