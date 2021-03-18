@@ -6,23 +6,25 @@
   "countryRestrictions": [],
   "verticals": {
     "events": {
+      "directAnswers": {
+        "fieldValues": {
+          "eligibleFields": [
+            "address",
+            "time"
+          ]
+        }
+      },
       "entityTypes": [
         "event"
       ],
       "name": "Events",
       "savedSearchId": "36194896",
       "searchableFields": {
-        "address": {
-          "directAnswer": true
-        },
         "builtin.entityType": {
           "nlpFilter": true
         },
         "name": {
           "textSearch": true
-        },
-        "time": {
-          "directAnswer": true
         },
         "time.start": {
           "sortable": true
@@ -74,8 +76,7 @@
           "nlpFilter": true
         },
         "builtin.location": {
-          "nlpFilter": true,
-          "textSearch": true
+          "nlpFilter": true
         },
         "employmentType": {
           "nlpFilter": true
@@ -171,12 +172,34 @@
       "source": "KNOWLEDGE_MANAGER"
     }
   },
-  "autocomplete": {
-    "disablePopularQueries": false,
-    "hardcodedPrompts": [
+  "querySuggestions": {
+    "popularQueriesBlacklistedTerms": [],
+    "universalPrompts": [
       "What is Yext?",
-      "Products offered"
-    ]
+      "Products offered",
+      "upcoming virtual events",
+      "open jobs near me",
+      "Recipes"
+    ],
+    "verticalPrompts": {
+      "faqs": [
+        "[[name]]"
+      ],
+      "products": [
+        "[[name]]"
+      ],
+      "jobs": [
+        "[[name]]",
+        "open jobs near me"
+      ],
+      "events": [
+        "events in [[address.city]]",
+        "upcoming virtual events"
+      ],
+      "recipes": [
+        "[[name]]"
+      ]
+    }
   },
   "synonyms": {
     "oneWay": [],
@@ -191,5 +214,6 @@
       ]
     ]
   },
-  "localizations": {}
+  "localizations": {},
+  "additionalSearchablePlaces": []
 }
