@@ -180,8 +180,8 @@
     "universalPrompts": [
       "FAQs",
       "Products offered",
-      "upcoming virtual events",
-      "open jobs near me",
+      "Upcoming virtual events",
+      "Open jobs near me",
       "Recipes"
     ],
     "verticalPrompts": {
@@ -193,11 +193,11 @@
       ],
       "jobs": [
         "[[name]]",
-        "open jobs near me"
+        "Open jobs near me"
       ],
       "events": [
-        "events in [[address.city]]",
-        "upcoming virtual events"
+        "Events in [[address.city]]",
+        "Upcoming virtual events"
       ],
       "recipes": [
         "[[name]]"
