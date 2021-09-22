@@ -18,9 +18,9 @@
       "linkType": "URL"
     },
     "c_servings": "4 servings",
-    "yext/description": "This delicious stew contains all of the ingredients you might want for a hearty meal. This will keep your family full and satisfied.",
-    "yext/landingPageUrl": "https://www.yext.com",
-    "yext/name": "Recipe"
+    "description": "This delicious stew contains all of the ingredients you might want for a hearty meal. This will keep your family full and satisfied.",
+    "landingPageUrl": "https://www.yext.com",
+    "name": "Recipe"
   },
   "entityType": "ce_recipe",
   "labels": []

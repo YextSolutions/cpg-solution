@@ -4,15 +4,15 @@
   "content": {
     "c_activeInAnswers": "YES",
     "c_department": "Customer Service",
-    "yext/description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mattis molestie a iaculis at erat pellentesque adipiscing commodo. Diam phasellus vestibulum lorem sed risus ultricies tristique nulla aliquet. Purus faucibus ornare suspendisse sed nisi lacus. Cursus turpis massa tincidunt dui ut ornare lectus sit amet.",
-    "yext/employmentType": "FULL_TIME",
-    "yext/hiringOrganization": "Yext",
-    "yext/landingPageUrl": "https://www.yext.com",
-    "yext/location": {
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mattis molestie a iaculis at erat pellentesque adipiscing commodo. Diam phasellus vestibulum lorem sed risus ultricies tristique nulla aliquet. Purus faucibus ornare suspendisse sed nisi lacus. Cursus turpis massa tincidunt dui ut ornare lectus sit amet.",
+    "employmentType": "FULL_TIME",
+    "hiringOrganization": "Yext",
+    "landingPageUrl": "https://www.yext.com",
+    "location": {
       "externalLocation": "Austin, TX"
     },
-    "yext/name": "Customer Service Representative",
-    "yext/yextBoundingBox": {
+    "name": "Customer Service Representative",
+    "yextBoundingBox": {
       "northEast": {
         "latitude": 30.5168629,
         "longitude": -97.5684199
@@ -23,6 +23,6 @@
       }
     }
   },
-  "entityType": "yext/job",
+  "entityType": "job",
   "labels": []
 }
