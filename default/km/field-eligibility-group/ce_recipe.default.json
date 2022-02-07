@@ -1,0 +1,18 @@
+{
+  "$id": "ce_recipe.default",
+  "$schema": "https://schema.yext.com/config/km/field-eligibility-group/v1",
+  "name": "Recipe-default",
+  "entityType": "ce_recipe",
+  "fields": [
+    "landingPageUrl",
+    "description",
+    "c_activeInAnswers",
+    "keywords",
+    "c_ingredients",
+    "c_photo",
+    "c_preparationTime",
+    "c_primaryCTA",
+    "c_secondaryCTA",
+    "c_servings"
+  ]
+}
