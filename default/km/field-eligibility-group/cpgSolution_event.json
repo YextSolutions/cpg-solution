@@ -1,12 +1,11 @@
 {
-  "$id": "product.default",
+  "$id": "cpgSolution_event",
   "$schema": "https://schema.yext.com/config/km/field-eligibility-group/v1",
-  "name": "Product-default",
-  "entityType": "product",
+  "name": "cpgSolution-Event",
+  "entityType": "event",
   "fields": [
     "c_activeInAnswers",
     "c_primaryCTA",
-    "c_productCategory",
     "c_secondaryCTA"
   ]
 }

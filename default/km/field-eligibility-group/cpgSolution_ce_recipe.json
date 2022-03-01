@@ -1,7 +1,7 @@
 {
-  "$id": "ce_recipe.default",
+  "$id": "cpgSolution_ce_recipe",
   "$schema": "https://schema.yext.com/config/km/field-eligibility-group/v1",
-  "name": "Recipe-default",
+  "name": "cpgSolution-Recipe",
   "entityType": "ce_recipe",
   "fields": [
     "landingPageUrl",
