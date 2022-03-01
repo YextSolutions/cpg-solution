@@ -1,0 +1,26 @@
+{
+  "$schema": "https://schema.yext.com/config/km/settings/v1",
+  "primaryEntityType": "product",
+  "entityTypeSettings": [
+    {
+      "entityType": "ce_recipe",
+      "disabled": false
+    },
+    {
+      "entityType": "event",
+      "disabled": false
+    },
+    {
+      "entityType": "faq",
+      "disabled": false
+    },
+    {
+      "entityType": "job",
+      "disabled": false
+    },
+    {
+      "entityType": "product",
+      "disabled": false
+    }
+  ]
+} 
